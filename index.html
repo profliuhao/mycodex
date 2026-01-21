@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeX Showcase Playground</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div>
+          <p class="tag">CodeX Showcase #1</p>
+          <h1>Helicopter Run</h1>
+          <p class="subtitle">
+            Hold the spacebar or tap to keep the helicopter airborne. Dodge the
+            towers and see how far you can go.
+          </p>
+        </div>
+        <div class="scoreboard">
+          <div>
+            <span class="label">Score</span>
+            <span id="score">0</span>
+          </div>
+          <div>
+            <span class="label">Best</span>
+            <span id="best-score">0</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="game-card">
+        <canvas id="game" width="860" height="420"></canvas>
+        <div class="hud">
+          <button id="toggle">Start</button>
+          <button id="reset">Reset</button>
+          <span id="status" class="status">Press Start to play</span>
+        </div>
+      </section>
+
+      <section class="tips">
+        <h2>How it works</h2>
+        <ul>
+          <li>Use spacebar, mouse, or touch to thrust upward.</li>
+          <li>Avoid both towers to survive.</li>
+          <li>Each gap you clear adds a point.</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
